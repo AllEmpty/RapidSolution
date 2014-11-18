@@ -1,0 +1,137 @@
+﻿body
+{
+    margin: 0;
+    padding:0;
+    height: auto;
+}
+
+.inline
+{
+    margin-right: 5px;
+    float: left;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/*
+table.result
+{
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+}
+
+table.result th
+{
+    border-bottom: solid 1px #ccc;
+    font-weight: bold;
+    padding: 3px;
+}
+
+table.result td
+{
+    padding: 3px;
+}
+*/
+ol.result
+{
+    list-style-type: decimal;
+    margin: 10px 0 10px 25px;
+}
+
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tb{font-weight:bold;}
+.tu{text-decoration:line-through;}
+
+.fontColor666{color:#666;}
+.fontColorRed{color:#990000;}
+
+
+.m5{margin:5px 5px 5px 5px}
+/*-----------input ----------*/
+.input04,.input06,.input0w,
+.input6b,.input6r,.input6w,
+.input10,.input15,.input20,.input30,
+.input40,.input50 {background:#fff;border:1px solid #ccc;height:20px;line-height:20px;color:#333;}
+
+
+.input0w{width:99%;}
+.input04 {width:40px;}
+.input06 {width:60px;}
+.input6b {color:#333;font-size:14px;}
+.input6r {width:60px;color:#990000;font-size:14px;text-align:right;}
+.input6w {color:#000099;font-size:14px;}
+
+.input10 {width:100px;}
+.input15 {width:150px;}
+.input20 {width:200px;}
+.input30 {width:300px;}
+.input40 {width:400px;}
+.input50 {width:500px;}
+
+.inputM06,.inputM10,.inputM15,.inputM20,.inputM04w,.inputM06w,.inputM10w ,.inputM12w ,.inputM20w,.inputM40w{color:#333;border:1px solid #ccc;line-height:20px;padding:2px;}
+.inputM06 {width:500px;height:60px;}
+.inputM10 {width:500px;height:100px;}
+.inputM15 {width:500px;height:150px;}
+.inputM20 {width:500px;height:200px;}
+.inputM04w {width:99%;height:40px;}
+.inputM06w {width:99%;height:60px;}
+.inputM10w {width:99%;height:100px;}
+.inputM12w {width:99%;height:120px;}
+.inputM20w {width:99%;height:200px;}
+
+
+
+.btnSave,.btnBg100,.btnBg45{height:22px;line-height:22px;border:none;margin:0px;padding:0px;}
+.btnSave:hover,.btnBg100:hover,.btnBg45:hover{color:#990000;}
+
+.btnSave{width:100px;background:url(../Images/btn/btnSave.png) no-repeat center center;}
+.btnBg100{width:100px;background:url(../Images/btn/btnBg100.png) no-repeat center center;}
+.btnBg45{width:45px;background:url(../Images/btn/btnBg45.png) no-repeat center center;}
+
+/*---------toolTip---------*/
+a.PicToolTip{background-color:transparent;}
+a.PicToolTip img{border:none;width:30px;height:20px;}
+
+a.PicToolTip2{background-color:transparent;}
+a.PicToolTip2 img{border:none;max-width:100px;max-height:200px;_width:100px;_height:200px;}
+
+
+/*---------ext---------*/
+.x-grid3-row-body .expander{padding-left:45px;}
+.x-grid3-row-body .expander p {padding: 5px;}
+.x-grid3-row-body .expander strong{font-weight: bold;}
+
+
+
+/*---------PicView---------*/
+.PicList_SupplierPhoto{overflow:hidden; margin:20px 0px 0px 0px;}
+.PicList_SupplierPhoto dl{width:160px;height:160px;float:left;padding:0px 0px 0px 0px;text-align:center;margin:0px 7px 5px 7px; display:inline;}
+.PicList_SupplierPhoto dt{width:160px;height:110px;border:#EAE1D0 1px solid;overflow:hidden;text-align:center;display:table-cell;vertical-align:middle;*display:block;*font-size:85px;*font-family:Arial;}
+.PicList_SupplierPhoto dt:hover{border:#CB490B 1px solid;}
+.PicList_SupplierPhoto dt a{width:150px;text-align:center;display:table-cell;vertical-align:middle;*display:block;*font-size:85px;*font-family:Arial;}
+.PicList_SupplierPhoto dd {height:50px;}
+
+
+.PicList_ProductPhoto{overflow:hidden; margin:20px 0px 0px 0px;}
+.PicList_ProductPhoto dl{width:180px;height:250px;float:left;padding:0px 0px 0px 0px;text-align:center;margin:0px 7px 5px 7px; display:inline;}
+.PicList_ProductPhoto dt{width:180px;height:180px;border:#EAE1D0 1px solid;overflow:hidden;text-align:center;}
+.PicList_ProductPhoto dt:hover{border:#CB490B 1px solid;}
+.PicList_ProductPhoto dt a{width:180px;text-align:center;}
+.PicList_ProductPhoto dd {height:70px;}
+
+/*---------PicView---------*/
+.bg1{background-color:#fcfcfc;}
+.spanww span{display:inline-block;}
+
+.txtChkBoxSel{color:#ff0000;cursor:pointer;}
+.txtChkBoxTxt{cursor:pointer;}
+.txtOptionSel{color:#990000;}
+
+
+.tb_03 th{font-weight:bold;}

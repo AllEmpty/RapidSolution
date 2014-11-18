@@ -1,0 +1,253 @@
+
+异常时间：2014-07-11 15:12:02,247 [23] 
+异常级别：ERROR 
+异常位置：[23] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.Exception: 查询数据异常,执行语句 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 SubSonic.DataProviders.DbDataProvider.ExecuteReader(QueryCommand qry) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\DataProviders\DbDataProvider.cs:行号 169
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1101
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1106
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1197
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 466
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 470
+   在 Solution.Logic.Managers.InformationBll.GetRecordCount(List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 807
+   在 Solution.Logic.Managers.InformationBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 932
+
+
+ 
+异常时间：2014-07-11 17:11:11,719 [34] 
+异常级别：ERROR 
+异常位置：[34] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.Exception: 查询数据异常,执行语句 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 SubSonic.DataProviders.DbDataProvider.ExecuteReader(QueryCommand qry) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\DataProviders\DbDataProvider.cs:行号 169
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1101
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1106
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1197
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 466
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 470
+   在 Solution.Logic.Managers.InformationBll.GetRecordCount(List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 807
+   在 Solution.Logic.Managers.InformationBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 932
+
+
+ 
+异常时间：2014-07-11 17:26:17,408 [12] 
+异常级别：ERROR 
+异常位置：[12] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：尝试删除编号ID为[42,41,40]的数据记录失败！
+异常：System.Exception: 查询数据异常,执行语句 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.GenerateConstraints() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 356
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.BuildSelectStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 612
+   在 SubSonic.Query.SqlQuery.BuildSqlStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 483
+   在 SubSonic.Query.SqlQuery.ToString() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 451
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 680
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 686
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1198
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1153
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1144
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(Int32 id, String colName, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1107
+   在 Solution.Web.Managers.WebManage.Systems.Set.UploadFileList.Delete() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Set\UploadFileList.aspx.cs:行号 112
+
+
+ 
+异常时间：2014-07-11 17:26:24,136 [31] 
+异常级别：ERROR 
+异常位置：[31] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：尝试删除编号ID为[42]的数据记录失败！
+异常：System.Exception: 查询数据异常,执行语句 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.GenerateConstraints() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 356
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.BuildSelectStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 612
+   在 SubSonic.Query.SqlQuery.BuildSqlStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 483
+   在 SubSonic.Query.SqlQuery.ToString() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 451
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 680
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 686
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1198
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1153
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1144
+   在 Solution.Logic.Managers.UploadFileBll.GetFieldValue(Int32 id, String colName, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 1107
+   在 Solution.Web.Managers.WebManage.Systems.Set.UploadFileList.Delete() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Set\UploadFileList.aspx.cs:行号 112
+
+
+ 
+异常时间：2014-07-11 17:53:44,599 [16] 
+异常级别：ERROR 
+异常位置：[16] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.Exception: 查询数据异常,执行语句 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 SubSonic.DataProviders.DbDataProvider.ExecuteReader(QueryCommand qry) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\DataProviders\DbDataProvider.cs:行号 169
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1101
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1106
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1197
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 466
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 470
+   在 Solution.Logic.Managers.InformationBll.GetRecordCount(List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 807
+   在 Solution.Logic.Managers.InformationBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 932
+
+
+ 
+异常时间：2014-07-11 18:04:21,041 [38] 
+异常级别：ERROR 
+异常位置：[38] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：Logic.Systems.Manager.CheckIsOffline出现异常
+异常：System.ArgumentException: 无效的模拟标记 - 它不能重复。
+   在 System.Security.Principal.WindowsIdentity.CreateFromToken(IntPtr userToken)
+   在 System.Security.Principal.WindowsIdentity..ctor(SerializationInfo info)
+   在 Microsoft.VisualStudio.WebHost.Server.GetProcessToken()
+   在 Microsoft.VisualStudio.WebHost.Host.GetProcessToken()
+   在 Microsoft.VisualStudio.WebHost.Request.GetUserToken()
+   在 Microsoft.VisualStudio.WebHost.Request.GetServerVariable(String name)
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 System.Collections.Specialized.NameValueCollection.get_Item(String name)
+   在 DotNet.Utilities.IpHelper.GetUserIp() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Internet&Url\IpHelper.cs:行号 27
+   在 Solution.Logic.Managers.OnlineUsersBll.GenerateMd5(OnlineUsers model) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 500
+   在 Solution.Logic.Managers.OnlineUsersBll.GenerateMd5() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 513
+   在 Solution.Logic.Managers.OnlineUsersBll.IsOffline(Page page) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 335
+
+
+ 
+异常时间：2014-07-11 18:04:21,087 [38] 
+异常级别：ERROR 
+异常位置：[38] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：Logic.Systems.Manager.CheckIsOffline出现异常
+异常：System.ArgumentException: 无效的模拟标记 - 它不能重复。
+   在 System.Security.Principal.WindowsIdentity.CreateFromToken(IntPtr userToken)
+   在 System.Security.Principal.WindowsIdentity..ctor(SerializationInfo info)
+   在 Microsoft.VisualStudio.WebHost.Server.GetProcessToken()
+   在 Microsoft.VisualStudio.WebHost.Host.GetProcessToken()
+   在 Microsoft.VisualStudio.WebHost.Request.GetUserToken()
+   在 Microsoft.VisualStudio.WebHost.Request.GetServerVariable(String name)
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 System.Collections.Specialized.NameValueCollection.get_Item(String name)
+   在 DotNet.Utilities.IpHelper.GetUserIp() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Internet&Url\IpHelper.cs:行号 27
+   在 Solution.Logic.Managers.OnlineUsersBll.GenerateMd5(OnlineUsers model) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 500
+   在 Solution.Logic.Managers.OnlineUsersBll.GenerateMd5() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 513
+   在 Solution.Logic.Managers.OnlineUsersBll.IsOffline(Page page) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 335
+
+
+ 
+异常时间：2014-07-11 18:21:58,965 [26] 
+异常级别：ERROR 
+异常位置：[26] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：保存失败！
+异常：System.Exception: 查询数据异常,执行语句 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.GenerateConstraints() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 356
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.BuildSelectStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 612
+   在 SubSonic.Query.SqlQuery.BuildSqlStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 483
+   在 SubSonic.Query.SqlQuery.ToString() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 451
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 680
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 686
+   在 Solution.Logic.Managers.InformationClassBll.GetFieldValue(String colName, List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 1189
+   在 Solution.Logic.Managers.InformationClassBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 1144
+   在 Solution.Logic.Managers.InformationClassBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 1135
+   在 Solution.Logic.Managers.InformationClassBll.GetFieldValue(Int32 id, String colName, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 1098
+   在 Solution.Web.Managers.WebManage.Informations.InformationEdit.Save() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Informations\InformationEdit.aspx.cs:行号 209
+
+
+ 
+异常时间：2014-07-11 18:22:03,242 [37] 
+异常级别：ERROR 
+异常位置：[37] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.Exception: 查询数据异常,执行语句 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.InvalidOperationException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 将参数值从 String 转换到 Int32 失败。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 SubSonic.DataProviders.DbDataProvider.ExecuteReader(QueryCommand qry) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\DataProviders\DbDataProvider.cs:行号 169
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1101
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.ExecuteReader() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1106
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 SubSonic.Query.SqlQuery.GetRecordCount() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 1197
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 466
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetRecordCount[T](List`1 wheres, Boolean norepeat) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 470
+   在 Solution.Logic.Managers.InformationBll.GetRecordCount(List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 807
+   在 Solution.Logic.Managers.InformationBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 932
+
+
+ 

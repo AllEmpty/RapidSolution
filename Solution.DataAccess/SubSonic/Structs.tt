@@ -1,0 +1,75 @@
+<#@ template  language="C#" debug="true" hostspecific="True"#>
+<#@ include file="MultipleOutputHelper.ttinclude"#> 
+<#@ output extension=".cs" #>
+<#@ include file="SQLServer.ttinclude" #>
+<#@ import namespace="System.IO"#>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Configuration"#>  
+<#
+    var tables = LoadTables();
+     
+    var manager = Manager.Create(Host, GenerationEnvironment);  
+
+	//遍历所有表
+	foreach(var tbl in tables){
+		if(!ExcludeTables.Contains(tbl.Name))
+		{
+			// 设置输出的文件名
+			manager.StartNewFile(tbl.CleanName+"Structs.cs");
+#> 
+using System;
+using SubSonic.Schema;
+using SubSonic.DataProviders;
+using System.Data;
+
+namespace <#=Namespace#> {
+        /// <summary>
+        /// Table: <#=tbl.Name#>
+        /// Primary Key: <#=tbl.PrimaryKey#>
+        /// </summary>
+
+        public class <#=tbl.CleanName#>Structs: DatabaseTable {
+            
+            public <#=tbl.CleanName#>Structs(IDataProvider provider):base("<#=tbl.Name#>",provider){
+                ClassName = "<#=tbl.ClassName#>";
+                SchemaName = "<#=tbl.Schema ?? ""#>";
+                
+<#          foreach(var col in tbl.Columns){#>
+
+                Columns.Add(new DatabaseColumn("<#=col.Name#>", this)
+                {
+	                IsPrimaryKey = <#=col.IsPK.ToString().ToLower()#>,
+	                DataType = DbType.<#=col.DbType.ToString()#>,
+	                IsNullable = <#=col.IsNullable.ToString().ToLower()#>,
+	                AutoIncrement = <#=col.AutoIncrement.ToString().ToLower()#>,
+	                IsForeignKey = <#=col.IsForeignKey.ToString().ToLower()#>,
+	                MaxLength = <#=col.MaxLength#>,
+					PropertyName = "<#=col.Name#>"
+                });
+<#          }#>                    
+                
+                
+            }
+
+<#          foreach(var col in tbl.Columns){#>
+            public IColumn <#=col.CleanName#>{
+                get{
+                    return this.GetColumn("<#=col.Name#>");
+                }
+            }
+				
+            
+<#          }#>                    
+        }
+        
+}
+<# 
+			// 输出文件结束
+			manager.EndBlock();
+		} //if(!ExcludeTables.Contains(tbl.Name)) 判断结束
+       
+	}// end foreach
+
+	// 执行编译，生成文件
+    manager.Process(true);  
+#> 

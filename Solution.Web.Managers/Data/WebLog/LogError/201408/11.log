@@ -1,0 +1,24 @@
+
+异常时间：2014-08-11 10:10:27,760 [10] 
+异常级别：ERROR 
+异常位置：[10] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：添加用户操作日志时出现异常
+异常：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Solution.Logic.Managers.UseLogBll.Save(Page page, String useLogOccurrence) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\UseLogBll.cs:行号 50
+
+
+ 
+异常时间：2014-08-11 10:15:14,441 [7] 
+异常级别：ERROR 
+异常位置：[7] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.AbortCurrentThread()
+   在 System.Web.HttpResponse.End()
+   在 Solution.Logic.Managers.MenuInfoBll.CheckPageEncrypt(Page page) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\MenuInfoBll.cs:行号 301
+   在 Solution.Logic.Managers.MenuInfoBll.CheckPagePower(Page page) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\MenuInfoBll.cs:行号 215
+
+
+ 

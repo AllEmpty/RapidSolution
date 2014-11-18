@@ -1,0 +1,44 @@
+﻿<#@ template language="C#" debug="True" hostspecific="True"  #>
+<#@ output extension=".cs" #>
+<#@ include file="SQLServer.ttinclude" #>
+<#
+    var sps = GetSPs(); 
+    if(sps.Count>0){ 
+#>  
+using System;
+using System.Data;
+using SubSonic.Schema;
+using SubSonic.DataProviders;
+
+namespace <#=Namespace#>{
+	public partial class SPs{
+
+<#  foreach(var sp in sps){#>
+        public static StoredProcedure <#=sp.CleanName#>(<#=sp.ArgList#>){
+            StoredProcedure sp=new StoredProcedure("<#=sp.Name#>");
+			
+<#      
+		foreach(var par in sp.Parameters){
+			//检查是否是输出参数
+			if(par.Direction == "INOUT")
+            {			
+#>
+			sp.Command.AddOutputParameter("<#=par.Name#>",-1,DbType.<#=par.DbType#>);
+<#      
+			}
+			else
+            {
+#>
+            sp.Command.AddParameter("<#=par.Name#>",<#=par.CleanName#>,DbType.<#=par.DbType#>);
+<#      
+            }
+		}
+#>
+            return sp;
+        }
+<#  }#>
+	
+	}
+	
+}
+<#  }#> 

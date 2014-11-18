@@ -1,0 +1,158 @@
+
+异常时间：2014-07-10 11:20:10,159 [23] 
+异常级别：ERROR 
+异常位置：[23] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：保存失败！
+异常：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Solution.Logic.Managers.UploadFileBll.Get_Ext(String typeKey) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Application\UploadFileBll.cs:行号 44
+   在 Solution.Logic.Managers.UploadFileBll.Upload_AspNet(HttpPostedFile oFile, Int32 vid, String key, Int32 userId, String userName, UploadFile m_r, Int32 userType) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Application\UploadFileBll.cs:行号 324
+   在 Solution.Web.Managers.WebManage.Advertisements.AdvertisementEdit.Save() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Advertisements\AdvertisementEdit.aspx.cs:行号 221
+
+
+ 
+异常时间：2014-07-10 11:21:34,749 [26] 
+异常级别：ERROR 
+异常位置：[26] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:21:35,238 [26] 
+异常级别：ERROR 
+异常位置：[26] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:21:42,669 [25] 
+异常级别：ERROR 
+异常位置：[25] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:21:43,372 [25] 
+异常级别：ERROR 
+异常位置：[25] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:22:05,612 [25] 
+异常级别：ERROR 
+异常位置：[25] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:22:07,749 [25] 
+异常级别：ERROR 
+异常位置：[25] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:22:30,325 [15] 
+异常级别：ERROR 
+异常位置：[15] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：保存失败！
+异常：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Solution.Logic.Managers.UploadFileBll.Get_Ext(String typeKey) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Application\UploadFileBll.cs:行号 44
+   在 Solution.Logic.Managers.UploadFileBll.Upload_AspNet(HttpPostedFile oFile, Int32 vid, String key, Int32 userId, String userName, UploadFile m_r, Int32 userType) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Application\UploadFileBll.cs:行号 324
+   在 Solution.Web.Managers.WebManage.Advertisements.AdvertisementEdit.Save() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Advertisements\AdvertisementEdit.aspx.cs:行号 221
+
+
+ 
+异常时间：2014-07-10 11:22:36,623 [10] 
+异常级别：ERROR 
+异常位置：[10] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:46,291 [4] 
+异常级别：ERROR 
+异常位置：[4] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:46,316 [9] 
+异常级别：ERROR 
+异常位置：[9] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:46,316 [9] 
+异常级别：ERROR 
+异常位置：[9] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:46,811 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:47,339 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:47,834 [4] 
+异常级别：ERROR 
+异常位置：[4] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:48,354 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 
+异常时间：2014-07-10 11:28:48,846 [9] 
+异常级别：ERROR 
+异常位置：[9] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：
+异常：System.InvalidCastException: 无法将类型为“Solution.DataAccess.Model.OnlineUsers”的对象强制转换为类型“System.Collections.Generic.Dictionary`2[System.String,System.Object]”。
+   在 Solution.Logic.Managers.OnlineUsersBll.UpdateUserOnlineInfo(String userHashKey, String colName, Object value) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\OnlineUsersBll.cs:行号 197
+
+
+ 

@@ -1,0 +1,30 @@
+
+异常时间：2014-07-15 14:04:51,964 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：添加用户操作日志时出现异常
+异常：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Solution.Logic.Managers.UseLogBll.Save(Page page, String useLogOccurrence) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\Systems\UseLogBll.cs:行号 50
+
+
+ 
+异常时间：2014-07-15 14:06:32,587 [10] 
+异常级别：ERROR 
+异常位置：[10] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：保存失败！
+异常：System.Exception: 查询数据异常,执行语句 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.GenerateConstraints() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 356
+   在 SubSonic.SqlGeneration.ANSISqlGenerator.BuildSelectStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\SQLGeneration\ANSISqlGenerator.cs:行号 612
+   在 SubSonic.Query.SqlQuery.BuildSqlStatement() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 483
+   在 SubSonic.Query.SqlQuery.ToString() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\Query\SqlQuery.cs:行号 451
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 680
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Solution.DataAccess.DbHelper.SelectHelper.GetColumnsValue[T](String columnsName, List`1 wheres, List`1 orderbys) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.DataAccess\DbHelper\SelectHelper.cs:行号 686
+   在 Solution.Logic.Managers.MenuInfoBll.GetFieldValue(String colName, List`1 wheres) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 1108
+   在 Solution.Logic.Managers.MenuInfoBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 1063
+   在 Solution.Logic.Managers.MenuInfoBll.GetFieldValue(String colName, String conditionColName, Object value, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 1054
+   在 Solution.Logic.Managers.MenuInfoBll.GetFieldValue(Int32 id, String colName, Boolean isCache) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 1017
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoEdit.Save() 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoEdit.aspx.cs:行号 167
+
+
+ 

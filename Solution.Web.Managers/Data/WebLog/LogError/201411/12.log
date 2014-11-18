@@ -1,0 +1,271 @@
+
+异常时间：2014-11-12 12:28:16,296 [13] 
+异常级别：ERROR 
+异常位置：[13] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Informations.InformationClassList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Informations\InformationClassList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.InformationClassBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 872
+
+
+ 
+异常时间：2014-11-12 12:28:18,165 [14] 
+异常级别：ERROR 
+异常位置：[14] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Informations.InformationList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Informations\InformationList.aspx.cs:行号 110
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.InformationBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationBll.cs:行号 966
+
+
+ 
+异常时间：2014-11-12 12:28:20,519 [12] 
+异常级别：ERROR 
+异常位置：[12] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Advertisements.AdvertisingPositionList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Advertisements\AdvertisingPositionList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.AdvertisingPositionBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\AdvertisingPositionBll.cs:行号 845
+
+
+ 
+异常时间：2014-11-12 12:28:22,328 [5] 
+异常级别：ERROR 
+异常位置：[5] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Advertisements.AdvertisementList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Advertisements\AdvertisementList.aspx.cs:行号 120
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.AdvertisementBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\AdvertisementBll.cs:行号 822
+
+
+ 
+异常时间：2014-11-12 12:28:49,085 [16] 
+异常级别：ERROR 
+异常位置：[16] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：获取用户操作日志表记录时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Set.UploadFileList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Set\UploadFileList.aspx.cs:行号 72
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.UploadFileBll.BindGrid(Grid grid, Int32 pageIndex, Int32 pageSize, List`1 wheres, List`1 sorts) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\UploadFileBll.cs:行号 831
+
+
+ 
+异常时间：2014-11-12 12:28:51,348 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 12:31:15,707 [19] 
+异常级别：ERROR 
+异常位置：[19] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 12:31:28,248 [6] 
+异常级别：ERROR 
+异常位置：[6] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 12:33:06,581 [19] 
+异常级别：ERROR 
+异常位置：[19] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 14:09:51,246 [4] 
+异常级别：ERROR 
+异常位置：[4] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 14:16:37,894 [16] 
+异常级别：ERROR 
+异常位置：[16] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 14:16:50,770 [16] 
+异常级别：ERROR 
+异常位置：[16] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 14:17:45,903 [16] 
+异常级别：ERROR 
+异常位置：[16] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Systems.Powers.MenuInfoList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Systems\Powers\MenuInfoList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.MenuInfoBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\MenuInfoBll.cs:行号 791
+
+
+ 
+异常时间：2014-11-12 14:20:48,116 [37] 
+异常级别：ERROR 
+异常位置：[37] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Informations.InformationClassList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Informations\InformationClassList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.InformationClassBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 872
+
+
+ 
+异常时间：2014-11-12 14:22:45,060 [12] 
+异常级别：ERROR 
+异常位置：[12] (E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\Log\LogHelper.cs:47) 
+消息描述：绑定表格时出现异常
+异常：System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   在 Solution.Web.Managers.WebManage.Informations.InformationClassList.Grid1_PreRowDataBound(Object sender, GridPreRowEventArgs e) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Web.Managers\WebManage\Informations\InformationClassList.aspx.cs:行号 105
+   在 FineUI.Grid.OnPreRowDataBound(GridPreRowEventArgs e)
+   在 FineUI.Grid.DataBindRow(Int32 rowIndex, Object rowObj)
+   在 FineUI.Grid.DataBindToDataTable(DataTable dataTable)
+   在 FineUI.Grid.DataBind()
+   在 Solution.Logic.Managers.InformationClassBll.BindGrid(Grid grid, Int32 parentValue, List`1 wheres, List`1 sorts, String parentId) 位置 E:\Asp.net\从零开始编写自己的C#框架\从零开始编写自己的C#框架解决方案\Solution\Solution.Logic.Managers\SubSonic\InformationClassBll.cs:行号 872
+
+
+ 
