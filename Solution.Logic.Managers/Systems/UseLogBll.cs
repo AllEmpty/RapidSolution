@@ -43,7 +43,7 @@ namespace Solution.Logic.Managers
                 //记录登录时间
                 uselog.AddDate = DateTime.Now;
                 //获取用户在线实体
-                var model = OnlineUsersBll.GetInstence().GetOnlineUsersModel();
+                var model = OnlineUsersBll.GetInstence().GetOnlineUsersModelForLog();
                 if (model != null)
                 {
                     //当前用户ID

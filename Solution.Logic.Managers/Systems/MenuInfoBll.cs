@@ -65,7 +65,7 @@ namespace Solution.Logic.Managers
                     {
                         //将菜单实体存入容器中
                         //使用页面地址做为KEY
-                        ht.Add(menuinfo.Url, menuinfo);
+                        ht.Add(Encrypt.Md5(menuinfo.Url), menuinfo);
                     }
                     catch (Exception)
                     {
@@ -113,7 +113,7 @@ namespace Solution.Logic.Managers
 
                 //从全局缓存中读取菜单内容
                 //获取菜单实体
-                return (MenuInfo)(MenuInfoBll.GetInstence().GetHashtable()[menuInfoUrl]);
+                return (MenuInfo)(GetHashtable()[Encrypt.Md5(menuInfoUrl)]);
             }
             catch (Exception)
             {
@@ -216,23 +216,27 @@ namespace Solution.Logic.Managers
 
 
                 //获取当前用户所有可以访问的页面ID
-                var menuId = GetMenuInfo(currentPage).Id + "";
-
-                if (!CheckPagePower(menuId))
+                var model = GetMenuInfo(currentPage);
+                if (model != null)
                 {
-                    //添加用户访问记录
-                    UseLogBll.GetInstence().Save(page, "{0}没有权限访问【{1}】页面");
-
-                    page.Response.Write("您没有访问该页面的权限！");
-                    page.Response.End();
-                    return;
+                    var menuId = GetMenuInfo(currentPage).Id + "";
+                    if (CheckPagePower(menuId))
+                    {
+                        return;
+                    }
                 }
 
+                //添加用户访问记录
+                UseLogBll.GetInstence().Save(page, "{0}没有权限访问【{1}】页面");
+
+                page.Response.Write("您没有访问该页面的权限！");
+                page.Response.End();
+                return;
             }
             catch (Exception e)
             {
                 // 记录日志
-                CommonBll.WriteLog("绑定表格时出现异常", e);
+                CommonBll.WriteLog("判断当前用户是否有当前页面操作权限", e);
 
                 //添加用户访问记录
                 UseLogBll.GetInstence().Save(page, "{0}没有权限访问【{1}】页面");

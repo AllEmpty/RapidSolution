@@ -65,6 +65,35 @@ namespace Solution.Logic.Managers
 
             return null;
         }
+
+        /// <summary>
+        /// 根据字段名称，获取当前用户在线表中的内容——为了避免死循环，专门提供给保存操作日志使用
+        /// </summary>
+        /// <returns></returns>
+        public DataAccess.Model.OnlineUsers GetOnlineUsersModelForLog()
+        {
+            try
+            {
+                //读取Session中存储的UserHashKey值
+                var userHashKey = SessionHelper.GetSession(OnlineUsersTable.UserHashKey) + "";
+
+                //如果不存在在线表则退出
+                if (string.IsNullOrEmpty(userHashKey))
+                    return null;
+
+                //返回指定字段的内容
+                var model = GetModelForCache(x => x.UserHashKey == userHashKey);
+
+                return model;
+            }
+            catch (Exception e)
+            {
+                //记录出错日志
+                CommonBll.WriteLog("", e);
+            }
+
+            return null;
+        }
         #endregion
 
         #region 获取在线用户表内容

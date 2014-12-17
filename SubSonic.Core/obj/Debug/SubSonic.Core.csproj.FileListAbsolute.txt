@@ -4,3 +4,10 @@ E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Cor
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\obj\Debug\ResolveAssemblyReference.cache
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\obj\Debug\SubSonic.Core.dll
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\SubSonic.Core\obj\Debug\SubSonic.Core.pdb
+E:\Asp.net\RapidSolution\SubSonic.Core\bin\Debug\SubSonic.Core.XML
+E:\Asp.net\RapidSolution\SubSonic.Core\bin\Debug\SubSonic.Core.dll
+E:\Asp.net\RapidSolution\SubSonic.Core\bin\Debug\SubSonic.Core.pdb
+E:\Asp.net\RapidSolution\SubSonic.Core\bin\Debug\Castle.Core.dll
+E:\Asp.net\RapidSolution\SubSonic.Core\obj\Debug\SubSonic.Core.csprojResolveAssemblyReference.cache
+E:\Asp.net\RapidSolution\SubSonic.Core\obj\Debug\SubSonic.Core.dll
+E:\Asp.net\RapidSolution\SubSonic.Core\obj\Debug\SubSonic.Core.pdb
