@@ -211,15 +211,26 @@ namespace DotNet.Utilities
         #endregion
 
         #region 创建目录
-        /// <summary>
-        /// 创建目录
-        /// </summary>
-        /// <param name="dir">要创建的目录路径包括目录名</param>
-        public static void CreateDir(string dir)
+        ///// <summary>
+        ///// 创建目录
+        ///// </summary>
+        ///// <param name="dir">要创建的目录路径包括目录名</param>
+        //public static void CreateDir(string dir)
+        //{
+        //    if (dir.Length == 0) return;
+        //    if (!Directory.Exists(System.Web.HttpContext.Current.Request.PhysicalApplicationPath + "\\" + dir))
+        //        Directory.CreateDirectory(System.Web.HttpContext.Current.Request.PhysicalApplicationPath + "\\" + dir);
+        //}
+
+        /// <summary>创建目录</summary>
+        /// <param name="dirpath">路径</param>
+        /// <returns></returns>
+        public static bool CreateDir(string dirpath)
         {
-            if (dir.Length == 0) return;
-            if (!Directory.Exists(System.Web.HttpContext.Current.Request.PhysicalApplicationPath + "\\" + dir))
-                Directory.CreateDirectory(System.Web.HttpContext.Current.Request.PhysicalApplicationPath + "\\" + dir);
+            if (string.IsNullOrEmpty(dirpath)) return false;
+
+            CheckSaveDir(dirpath);
+            return DirExists(dirpath);
         }
         #endregion
 
@@ -405,6 +416,19 @@ namespace DotNet.Utilities
                 FileStream fs = File.Create(FilePath);
                 fs.Close();
             }
+        }
+        #endregion
+
+        #region 检查文件是否存在
+
+        /// <summary>返回目录是否存在</summary>
+        /// <param name="dirname">目录名</param>
+        /// <returns>是否存在</returns>
+        public static bool DirExists(string dirname)
+        {
+            if (string.IsNullOrEmpty(dirname)) return false;
+
+            return Directory.Exists(dirname);
         }
         #endregion
 
@@ -879,7 +903,12 @@ namespace DotNet.Utilities
                 }
                 else
                 {
-                    return HttpContext.Current.Server.MapPath("/");
+                    strPath = strPath.Replace("/", "\\");
+                    if (strPath.StartsWith("\\"))
+                    {
+                        strPath = strPath.TrimStart('\\');
+                    }
+                    return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, strPath);
                 }
             }
             catch (Exception)

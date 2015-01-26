@@ -35,6 +35,46 @@ namespace DotNet.Utilities
         }
         #endregion
 
+        #region 写日志
+        /// <summary>
+        /// 将内容写入日志里
+        /// </summary>
+        /// <param name="fileName">文件名</param>
+        /// <param name="content">要写入日志文件的内容</param>
+        public static void WriteLog(string fileName, string content)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(content)) return;
+
+                string path = "/Data/log/" + fileName + "/" + GetYearMonth(DateTime.Now) + "/";
+                DirFileHelper.CreateDir(path);
+
+                AppendFile(DateTime.Now.ToLongTimeString() + content + "\r\n\r\n\r\n", path + DateTime.Now.Day + ".txt");
+
+            }
+            catch
+            {
+
+            }
+        }
+
+        /// <summary>获取日期中的年</summary>
+        /// <param name="date">日期</param>
+        /// <returns>年</returns>
+        public static string GetYearMonth(DateTime date)
+        {
+            try
+            {
+                return date.ToString("yyMM");
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
+        #endregion
+
         #region 读文件
         protected string Read_Txt(string filename)
         {
@@ -173,6 +213,32 @@ namespace DotNet.Utilities
             sw.Flush();
             sw.Close();
             sw.Dispose();
+        }
+
+        /// <summary>追加文件(文本),如果该文件不存在就创建</summary>
+        /// <param name="filebody">文件内容</param>
+        /// <param name="filename">文件名(包括完整路径)</param>
+        /// <returns></returns>
+        public static bool AppendFile(string filebody, string filename)
+        {
+            if (string.IsNullOrEmpty(filename)) return false;
+
+            try
+            {
+                if (filename.IndexOf(":") < 0) { filename = DirFileHelper.GetMapPath(filename); }
+
+                var fs = new FileStream(filename, FileMode.Append);
+                var sw = new StreamWriter(fs);
+                sw.Write(filebody);
+                sw.Flush();
+                sw.Close();
+                fs.Close();
+            }
+            catch
+            {
+                return false;
+            }
+            return (File.Exists(filename));
         }
         #endregion
 

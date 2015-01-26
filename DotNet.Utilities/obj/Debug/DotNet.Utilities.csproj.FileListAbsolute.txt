@@ -11,7 +11,6 @@ E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utili
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\obj\Debug\ResolveAssemblyReference.cache
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
 E:\ASP.NET\从零开始编写自己的C#框架解决方案\Solution\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
-E:\Asp.net\RapidSolution\DotNet.Utilities\bin\Debug\DotNet.Utilities.XML
 E:\Asp.net\RapidSolution\DotNet.Utilities\bin\Debug\DotNet.Utilities.dll
 E:\Asp.net\RapidSolution\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
 E:\Asp.net\RapidSolution\DotNet.Utilities\bin\Debug\FineUI.dll
